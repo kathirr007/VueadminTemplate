@@ -1,0 +1,35 @@
+language: node_js
+node_js:
+- '10.15.1'
+# - '8.10.0'
+cache: yarn
+before_install:
+# - chmod 755 ./deploy.sh
+install:
+- yarn install
+before_script:
+# - git config --global user.email "travis@travis-ci.org"
+# - git config --global user.name "Travis"
+script:
+# - chmod +x ./deploy-ghpages.sh
+- yarn build # Change this script to run your production build command
+# - chmod +x ./deploy.sh
+# - "./deploy.sh"
+after_success:
+# this "deploy.sh" has code to deploy files generated from vue production build
+# - gulp deploy
+# - "./deploy.sh"
+after_failure:
+after_script:
+before_deploy:
+deploy:
+# Standard GH-Pages Deploy
+  provider: pages
+  skip-cleanup: true
+#   github-token: fd8d095ed53a0c01428a583edf6fa199c0c5fae3  # Set in the settings page of your repository, as a secure variable
+  github-token: $GH_TOKEN  # Set in the settings page of your repository, as a secure variable
+  keep-history: true
+  local_dir: dist # Change this to your build directory
+  on:
+    branch: master
+after_deploy:

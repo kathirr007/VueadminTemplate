@@ -87,23 +87,19 @@
         &lt;template slot-scope=&quot;{data}&quot;&gt;
             &lt;vs-tr :data=&quot;tr&quot; :key=&quot;indextr&quot; v-for=&quot;(tr, indextr) in data&quot; &gt;
               &lt;vs-td :data=&quot;data[indextr].email&quot;&gt;
-              Replace the '"' in here with template expression the double flower brackets.
-"{{"data[indextr].username"}}"
+                {{ "\{\{data[indextr].username\}\}" }}
               &lt;/vs-td&gt;
 
               &lt;vs-td :data=&quot;data[indextr].username&quot;&gt;
-              Replace the '"' in here with template expression the double flower brackets.
-"{{"data[indextr].username"}}"
+                {{"\{\{data[indextr].username\}\}"}}
               &lt;/vs-td&gt;
 
               &lt;vs-td :data=&quot;data[indextr].id&quot;&gt;
-              Replace the '"' in here with template expression the double flower brackets.
-"{{"data[indextr].website"}}"
+                {{"\{\{data[indextr].website\}\}"}}
               &lt;/vs-td&gt;
 
               &lt;vs-td :data=&quot;data[indextr].id&quot;&gt;
-              Replace the '"' in here with template expression the double flower brackets.
-"{{"data[indextr].id"}}"
+                {{"\{\{data[indextr].id\}\}"}}
               &lt;/vs-td&gt;
             &lt;/vs-tr&gt;
           &lt;/template&gt;
