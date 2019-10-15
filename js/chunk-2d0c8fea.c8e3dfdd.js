@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0c8fea"],{"56f9":function(n,t,e){"use strict";e.r(t);var c=function(){var n=this,t=n.$createElement,e=n._self._c||t;return e("vx-card",{attrs:{title:"Private Content"}},[e("p",[n._v("Only admins can see this content.")])])},a=[],s=e("0c7c"),l={},r=Object(s["a"])(l,c,a,!1,null,null,null);t["default"]=r.exports}}]);
+//# sourceMappingURL=chunk-2d0c8fea.c8e3dfdd.js.map
