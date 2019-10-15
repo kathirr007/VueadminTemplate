@@ -1,7 +1,11 @@
 {
   "name": "vuesax-vuejs-dashboard-admin-template",
   "version": "2.0.0",
-  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kathirr007/VueadminTemplate.git"
+  },
+  "author": "Kathirr007",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
