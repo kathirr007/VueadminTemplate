@@ -71,7 +71,7 @@
     "@vue/cli-plugin-babel": "^3.7.0",
     "@vue/cli-plugin-eslint": "^3.7.0",
     "@vue/cli-service": "^3.7.0",
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "purgecss": "^1.3.0",
     "sass-loader": "^7.1.0",
     "tailwindcss": "^1.0.1",
